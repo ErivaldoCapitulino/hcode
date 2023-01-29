@@ -15,6 +15,10 @@ class CalcController {
     }, 1000);
   }
 
+  initButtonsEvents() {
+    document.querySelectorAll("#buttons > g, #parts > g");
+  }
+
   setDisplayTime() {
     this.displayTime = this.currentDate.toLocaleTimeString(this._locale);
     this.displayDate = this.currentDate.toLocaleDateString(this._locale, {
